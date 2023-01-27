@@ -1,0 +1,95 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body
+{   
+    width: 100%;
+    height: 100%;
+}
+
+
+section
+{
+    font-family: "Montserrat", monospace;
+    color: #454545;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.wrapper
+{
+    width: cal(100% - 32px);
+}
+
+header
+{
+    width: 100%;
+    height: 6%;
+    box-shadow: 1px 1px 8px darkgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 30px 10%;
+}
+
+header .
+{
+    font-family: "Josefin Sans" ,arial;
+    color:black;
+    /* margin-right: 200px; */
+
+}
+.mainNav ul
+{
+    list-style-type: none;
+    
+}
+
+.mainNav li 
+{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px;
+    color: black;
+
+}
+
+.mainNav li a
+{
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+}
+
+a:hover 
+{
+    text-shadow: 2px 5px 10px rgb(144, 144, 144);
+    cursor: pointer;
+    transition: all 0.8s ease 0s;
+}
+
+section .wrapper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+section img
+{
+    width: 30%;
+}
+
+@media (min-width: 768px)
+{
+    .wrapper
+    {
+        width: cal(100% - 60px);
+    }
+}
