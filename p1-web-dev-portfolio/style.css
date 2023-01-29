@@ -8,24 +8,272 @@ html,body
 {   
     width: 100%;
     height: 100%;
+    background-color: #f1f1f1;
+    
 }
 
 
-section
+main
 {
     font-family: "Montserrat", monospace;
-    color: #454545;
+    color: #463F3A;
     font-size: 18px;
     line-height: 1.5;
     width: 100%;
 }
 
-.wrapper
+section
 {
-    width: cal(100% - 32px);
+    padding: 3em 0 1em 0;
 }
 
+h2,h3
+{
+    line-height: .8;
+    text-align: center;
+}
+
+p
+{
+    margin-bottom: 0.85em;
+    font-size: .8em;
+}
+img
+{
+    display: block ;
+    max-width: 100%;
+}
+.logo
+{
+    color: rgb(42, 42, 42);
+    font-family: "Josefin Sans", monospace;
+    text-align: center;
+}
+.logo a
+{
+    text-decoration: none;
+    color: black;
+}
+span
+{
+    color: #8A817C;
+}
 header
+{
+    padding: 1em 0 2em;
+    box-shadow: 2px 2px 15px #BCB8B1;
+}
+nav ul
+{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav a
+{
+    display: inline-block;
+    padding:0.5em;
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", monospace;
+}
+
+nav a:hover, nav a:focus
+{
+    color: rgb(163, 128, 38);
+    text-decoration: underline;
+}
+.intro
+{
+    padding-bottom: 5em;
+}
+
+.sectionTitle
+{
+    text-align: center;
+    line-height: 1em;
+    margin: 1em;
+}
+
+.aboutMe
+{
+    color: #BCB8B1;
+    /* background-image: url(assets/desk.png);
+    background-blend-mode: multiply;
+    background-attachment:fixed ; */
+    background-color: #463F3A;
+    padding: 5em 1em;
+}
+.aboutMeIntro
+{
+    padding-bottom: 2em;
+}
+
+.skillContainer
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    padding:1em;
+    padding:-top 3em;
+}
+
+.skillBox
+{
+    color: black;
+    cursor: pointer;
+}
+
+.skillTitle
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5em;
+    margin-bottom: 1.5em;
+}
+
+.skills h2 .img .portfolio h2
+{
+    width: 3em;
+    padding-top: 2em;
+
+}
+
+.skillIcons
+{
+    width: 50px;
+
+}
+
+
+.portfolioContainer
+{
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 100%;
+    
+}
+
+.portfolioContainer img
+{
+    width: 500px;
+}
+
+.portfolioLink
+{
+    text-decoration:none ;
+    color: black;
+    text-align: center;
+
+}
+
+footer
+{
+    background-color: #2b2724;
+    color:#BCB8B1;
+    padding: 2em 1em;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+
+footer a
+{
+    color: #BCB8B1;
+    font-family: "Montserrat", monospace;
+}
+.footerNav
+{
+    list-style-type:none;
+    padding-top: 1em;
+
+}
+
+.footerNav a
+{
+    /* padding: .75em; */
+    text-decoration:none ;
+}
+
+.footerNav a:hover
+{
+    text-decoration: underline;
+}
+
+.footerSocial
+{
+    list-style-type: none;
+    padding: 1em 1.2em;
+}
+.linkIcon
+{
+    width:35px;
+    padding: 3px;
+}
+
+
+
+@media only screen and (min-width: 768px)
+{
+
+   h2,h1,nav a, .footerNav a, p
+   {
+    margin: 0;
+    padding: 0;
+
+   }
+   header, main, footer
+   {
+    font-size: 1.5em;
+   }
+   
+   .skillIcons, 
+   {
+    width: 100px;
+   }
+   .linkIcon
+   {
+    width: 60px;
+   }
+    
+}
+@media only screen and (min-width: 992px)
+{
+    h2,h1,nav a, .footerNav a, p
+   {
+    margin: 0;
+    padding: 0;
+
+   }
+   .glasses
+   {
+    width: 20em;
+   }
+   header, main, footer,p
+   {
+    font-size: 1.2em;
+   }
+   
+   .skillIcons, 
+   {
+    width: 100px;
+   }
+   .linkIcon
+   {
+    width: 60px;
+   }
+
+   header
 {
     width: 100%;
     height: 6%;
@@ -36,60 +284,107 @@ header
     padding: 30px 10%;
 }
 
-header .
-{
-    font-family: "Josefin Sans" ,arial;
-    color:black;
-    /* margin-right: 200px; */
 
-}
-.mainNav ul
+.skillIcons
 {
-    list-style-type: none;
-    
+    width: 80px;
 }
-
-.mainNav li 
+nav li 
 {
     display: inline-block;
     text-decoration: none;
     padding: 0 20px;
-    color: black;
-
+    
 }
 
-.mainNav li a
+nav li a
 {
-    text-decoration: none;
-    color: black;
+    
     padding: 10px 15px;
 }
-
-a:hover 
+.aboutUsContent
 {
-    text-shadow: 2px 5px 10px rgb(144, 144, 144);
-    cursor: pointer;
-    transition: all 0.8s ease 0s;
+    padding: 1em 15em 1em 15em;
+}
+.portfolio h2
+{
+    margin: 2em;
 }
 
-section .wrapper
+.portfolioWrapper
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-
-}
-section img
-{
-    width: 30%;
+    padding-bottom: 5em;
+    
 }
 
-@media (min-width: 768px)
-{
-    .wrapper
+    .intro
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem;
+      }
+
+    .container 
     {
-        width: cal(100% - 60px);
-    }
+        position: relative;
+        border-radius: 10px;
+      }
+      
+      .portfolioImg 
+      {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .3s ease-in-out;
+        
+      }
+      
+      
+      
+      .overlay 
+      {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        /* height: 14.6em;
+        width: 26em; */
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.1);
+        background-blend-mode: multiply;
+        transition: .3s ease-in-out;
+        
+      }
+      
+      .container:hover .overlay 
+      {
+        opacity: 1;
+        transform: scale(1.1); 
+      }
+      .container:hover img 
+      {
+        transform: scale(1.1); 
+      }
+      
+      
+      .text 
+      {
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .footerSocial
+      {
+        width: 4.5em;
+      }
+      
+      
 }

@@ -5,38 +5,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>p1-web-dev-portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-
-    <title>p1-web-dev-portfolio)</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h2 class="logo">
-            PORTFOLIO
-        </h2>
-        <nav class="mainNav">
+        <h1 class="logo"><a href="index.html"></a> Portfolio</h1>
+        <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#aboutMe">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+
             </ul>
         </nav>
     </header>
-    <section>
-        <div class="wrapper">
-            <img src="assets/img.svg" alt="">
-            <h1>
-                Hi! I'm Renee Rose
-            </h1>
-        </div>
+    <main>
+        <section class="intro" id="home">
+            <img src="assets/Glasses.svg" class="glasses" alt="">
+            <h2 class="sectionTitle">Hi my name is <span>Renee</span> and I'm an inspiring <span>developer</span>...
+            </h2>
+        </section>
 
-    </section>
-    <footer></footer>
+        <section class="aboutMe" id="aboutMe">
+            <div class="aboutMeIntro">
+                <h2 class="sectionTitle">About Me</h2>
+            </div>
+            <div class="aboutUsContent">
+                I am a twenty-ish something years old former photographer turned inspiring web developer focused on
+                learning and expanding my knowledge in all things related to web development through hard work and sheer
+                will.
+
+                <br><br>
+                I like to think that I have a creative and a logical side. Which made me realize that web development
+                would be the perfect fit.
+                I could use my creative side to design and my logical side to code.
+            </div>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skillContainer">
+                <div class="skillBox">
+                    <div class="skillTitle" id="skills">
+                        <div class="img">
+                            <img src="assets/html.png" alt="" class="skillIcons">
+                        </div>
+
+                    </div>
+                    <p>HTML describes the structure of a web page semantically and
+                        originally included cues for the appearance of the document. </p>
+                </div>
+                <div class="skillBox">
+                    <div class="skillTitle">
+                        <div class="img">
+                            <img src="assets/css.png" alt="" class="skillIcons">
+                        </div>
+
+                    </div>
+                    <p>CSS is designed to enable the separation of content and presentation, including layout, colors,
+                        and fonts. This separation can improve content accessibility. </p>
+                </div>
+                <div class="skillBox">
+                    <div class="skillTitle">
+                        <div class="img">
+                            <img src="assets/photoshop.png" alt="" class="skillIcons">
+                        </div>
+
+                    </div>
+                    <p>Photoshop can edit and compose raster images in multiple layers and supports masks, alpha compositing and several color models. </p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolioWrapper">
+                <div class="portfolioContainer">
+                <div class="container">
+                    <img src="assets/portfolio1.svg" alt="" class="portfolioImg">
+                    <div class="overlay">
+                        <a class="portfolioLink" href="https://www.google.com/">
+                            <div class="text">Portfolio 1</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="portfolioContainer">
+                <div class="container">
+                    <img src="assets/portfolio2.svg" alt="" class="portfolioImg" style="wi">
+                    <div class="overlay">
+                        <a class="portfolioLink" href="https://www.google.com/">
+                            <div class="text">Portfolio 2</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="portfolioContainer">
+                <div class="container">
+                    <img src="assets/portfolio3.svg" alt="" class="portfolioImg">
+                    <div class="overlay">
+                        <a class="portfolioLink" \" href="https://www.google.com/">
+                            <div class="text">Portfolio 3</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+
+
+        </section>
+
+
+
+    </main>
+    <footer>
+        <ul class="footerNav">
+
+            <li><a href="#home">Home</a>
+            <li><a href="#aboutMe">About</a>
+            <li><a href="assets/white-silkie.jpg" download="">Resume</a></li>
+            <li><a href="mailto:someone@example.com">Contact Us</a></li>
+        </ul>
+        <ul class="footerSocial">
+            <li><a class="linkSocial" href="https://gitlab.com/reneetanoco"><img class="linkIcon"
+                        src="assets/gitlab.png" alt=""></a>
+            </li>
+            <li><a
+                    href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BXKd76lwKSl2MAqJezUHO3Q%3D%3D"><img
+                        class="linkIcon" src="assets/linkedin.png" alt=""></a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
