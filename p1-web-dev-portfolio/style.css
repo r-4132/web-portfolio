@@ -48,6 +48,7 @@ img
     color: rgb(42, 42, 42);
     font-family: "Josefin Sans", monospace;
     text-align: center;
+    cursor: pointer;
 }
 .logo a
 {
@@ -89,6 +90,7 @@ nav a:hover, nav a:focus
 .intro
 {
     padding-bottom: 5em;
+    
 }
 
 .sectionTitle
@@ -239,7 +241,7 @@ footer a
    
    .skillIcons, 
    {
-    width: 100px;
+    width: 120px;
    }
    .linkIcon
    {
