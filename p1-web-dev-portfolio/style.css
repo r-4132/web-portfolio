@@ -91,70 +91,79 @@ nav a:hover, nav a:focus
 }
 .intro
 {
-    padding-bottom: 5em;
+    padding-bottom: 6.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
-
-.sectionTitle
+.intro img
 {
-    text-align: center;
-    line-height: 1em;
-    margin: 1em;
+    width: 15em;
 }
 
-.aboutMe
+.intro #arrow
+{
+    width: 2em;
+}
+
+.section-title
+{
+    /* text-align: center; */
+    /* line-height: 1em; */
+    margin: 1em;
+    font-size: 1em;
+}
+
+.about-me
 {
     color: #BCB8B1;
     background-color: #463F3A;
-    padding: 5em 1em;
-}
-.aboutMeIntro
-{
-    padding-bottom: 2em;
+    padding: 3em 1em;
 }
 
-.skillContainer
+.about-us-content 
+{
+    padding: 1em 1em;
+    margin: 2em 1em;
+}
+
+
+.skill-container
 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 3fr);
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 1em;
-    padding:1em;
-    padding:-top 3em;
+    padding:2em;
+    padding-top: 3em;
 }
 
-.skillBox
+.skill-box
 {
     color: black;
     cursor: pointer;
 }
 
-.skillTitle
+.skill-title
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: .5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
-.skills h2 .img .portfolio h2
+.skill-icons
 {
-    width: 3em;
-    padding-top: 2em;
-
-}
-
-.skillIcons
-{
-    width: 50px;
+    width: 2.5em;
 
 }
 
 
-.portfolioContainer
+.portfolio-container
 {
     margin: 2em;
     display: flex;
@@ -165,12 +174,12 @@ nav a:hover, nav a:focus
     
 }
 
-.portfolioContainer img
+.portfolio-container img
 {
-    width: 500px;
+    width: 30em;
 }
 
-.portfolioLink
+.portfolio-link
 {
     text-decoration:none ;
     color: black;
@@ -193,64 +202,118 @@ footer a
     color: #BCB8B1;
     font-family: "Montserrat", monospace;
 }
-.footerNav
+.footer-nav
 {
     list-style-type:none;
     padding-top: 1em;
 
 }
 
-.footerNav a
+.footer-nav a
 {
     /* padding: .75em; */
     text-decoration:none ;
 }
 
-.footerNav a:hover
+.footer-nav a:hover
 {
     text-decoration: underline;
 }
 
-.footerSocial
+.footer-social
 {
     list-style-type: none;
-    padding: 1em 1.2em;
+    /* padding: 1em 1.2em; */
 }
-.linkIcon
+.link-icon
 {
-    width:35px;
-    padding: 3px;
+    width: 1.5em;
+    margin: 1em;
 }
 
 
 
 @media only screen and (min-width: 768px)
 {
+    h1
+    {
+        font-size: 3em;
+    }
 
-   h2,h1,nav a, .footerNav a, p
-   {
-    margin: 0;
-    padding: 0;
-
-   }
-   header, main, footer
-   {
-    font-size: 1.5em;
-   }
-   
-   .skillIcons 
-   {
-    width: 120px;
-   }
-   .linkIcon
-   {
-    width: 60px;
-   }
+    p
+    {
+        font-size: 1.5em;
+    }
     
+    .section-title
+    {
+        font-size: 2.2em;
+        padding: 2em;
+    }
+
+    .intro
+    {
+        margin: 2em;
+    }
+
+    .intro img
+    {
+        width: 25em;
+    }
+    .intro #arrow
+    {
+        width: 4em;
+        margin: 1em;
+    }
+    nav a
+    {
+        font-size: 1.5em;
+    }
+
+    .about-us-content
+    {
+        padding: 1em 3em;
+    }
+
+    
+    .skill-icons
+    {
+        width: 5em;
+    }
+
+    .skill-box
+    {
+        padding: 1em 2em;
+    }
+    
+    .skill-box p
+    {
+        font-size: 1.3em;
+    }
+
+    .overlay .text
+    {
+        font-size: 1.5em;
+    }
+
+    .footer-nav a
+    {
+        font-size: 1.2em;
+    }
+
+    .footer-social
+    {
+        width: 3.5em;
+        margin: 1em;
+    }
+
+  
 }
+
+
 @media only screen and (min-width: 992px)
 {
-    h2,h1,nav a, .footerNav a, p
+    h2,h1,nav a, .footer-nav a, p
    {
     margin: 0;
     padding: 0;
@@ -266,11 +329,11 @@ footer a
    }
    
    
-   .skillIcons
+   .skill-icons
    {
     width: 100px;
    }
-   .linkIcon
+   .link-icon
    {
     width: 60px;
    }
@@ -291,7 +354,7 @@ footer a
 }
 
 
-.skillIcons
+.skill-icons
 {
     width: 80px;
 }
@@ -308,7 +371,7 @@ nav li a
     
     padding: 10px 15px;
 }
-.aboutUsContent
+.about-us-content
 {
     padding: 1em 15em 1em 15em;
 }
@@ -317,7 +380,7 @@ nav li a
     margin: 2em;
 }
 
-.portfolioWrapper
+.portfolio-wrapper
 {
     display: flex;
     padding-bottom: 5em;
@@ -340,7 +403,7 @@ nav li a
         border-radius: 10px;
       }
       
-      .portfolioImg 
+      .portfolio-img 
       {
         display: block;
         width: 100%;
@@ -385,7 +448,7 @@ nav li a
         transform: translate(-50%, -50%);
         text-align: center;
       }
-      .footerSocial
+      .footer-s ocial
       {
         width: 4.5em;
       }
