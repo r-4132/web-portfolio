@@ -16,7 +16,7 @@
 This is required to be able to use this app.
 - Git
 &nbsp;
-  **Installation**
+**Installation**
 - `git init` to initialize folder
 - `git clone` https://gitlab.com/uplift-code-camp/students/batch-14/renee/project.git](https://github.com/r-4132/web-portfolio.git
 
