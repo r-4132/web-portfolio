@@ -20,5 +20,5 @@ This is required to be able to use this app.
 
 ## **Installation**
 - `git init` to initialize folder
-- `git clone` "https://github.com/r-4132/web-portfolio.git"
+- `git clone` https://github.com/r-4132/web-portfolio.git
 
