@@ -7,7 +7,7 @@
 &nbsp;
 ## Technology
 
-- <img src = "https://repository-images.githubusercontent.com/37153337/9d0a6780-394a-11eb-9fd1-6296a684b124](https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-details.png" width="200">
+- <img src = "https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-details.png" width="200">
 
 ---
 &nbsp;
